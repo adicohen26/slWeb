@@ -1,0 +1,12 @@
+@media (min-width:1024px) and (max-width:1920px) {
+    .faceVid h1{
+        font-size: 850%;
+        padding-top:  5.5rem;
+    }
+}
+
+@media (min-width:360px) and (max-width:414px){
+    .faceVid h1{
+        font-size: 500%;
+    }
+}

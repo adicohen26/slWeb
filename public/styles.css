@@ -1,0 +1,128 @@
+.about{
+    background-color: #D4E1D8;
+    padding: 4rem 2rem 1rem;
+    display: block;
+}
+.aboutImg{
+    background-image: url(./images/about-img.jpg);
+    width: 75%;
+    height: 20rem;
+    border-radius: 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1 ;
+    left: 1rem;
+}
+.aboutIntro{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+}
+
+p{
+    font-size: 0.7rem;
+}
+
+body{
+    font-family: 'Assistant', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aqua;
+    direction:rtl;
+}
+
+.darkHeading{
+    color: #3B5B66;
+    display: inline-block;
+    margin: auto 0.5rem;
+    /* text-shadow: 1px 1px 2px #3B5B66; */
+}
+
+.discription{
+    background-color: white;
+    padding: 6rem 2rem 2rem 2rem;
+    width: 70%;
+    border-radius: 0.5rem;
+    position: relative;
+    right: 2.4rem;
+    bottom: 4rem;
+    
+}
+
+.faceVid{
+    background-image: url("./images/desertWithBackground.jpg") ;
+    /* Full height */
+  height:  55rem;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.faceVid h1{
+    color: white;
+    text-align:justify;
+    margin: 0;
+    /* font-size: 400%; */
+    padding-top:  3rem;
+}
+.frontImg{
+    background-image: url("./images/deserNoBackground1.png");
+    height:  100%;
+    width: 100%; 
+    /* Center and scale the image nicely */
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0px;
+}
+
+#logo{
+    font-style: bold;
+    margin: 0;
+
+}
+
+.navbar{
+    background-color: white;
+    position: fixed;
+    text-align: center;
+    margin: 0 11.5%;
+    width: 70%;
+    border-radius: 0 0 10rem 10rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #3B5B66;
+    padding:1.5% 3.5%;
+
+    z-index: 2;
+}
+
+.navbar p{
+    font-weight: bold;
+    padding-left: 0.5rem;
+    font-size: 14px;
+}
+
+.rectengle{
+    text-align: center;
+    margin: 2.3rem 5% 0 5%;
+    width: 70%;
+    height: 40rem;
+    border: 0.8rem;
+    border-style: solid;
+    border-color: #F29E9B;
+    /* display: inline-block; */
+    position: absolute;
+}
+
+
+
