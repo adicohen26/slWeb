@@ -1,8 +1,8 @@
 import React from "react";
-import FaceVideo from "./FaceVideo.jsx";
-import Navbar from "./Navbar.jsx";
-import ScreenSize from "./ScreenSize.jsx";
-import About from "./About.jsx";
+import FaceVideo from "../../client/node_modules/src/components/FaceVideo.jsx";
+import Navbar from "../../client/node_modules/src/components/Navbar.jsx";
+import ScreenSize from "src/components/ScreenSize.jsx";
+import About from "../../client/node_modules/src/components/About.jsx";
 // import Fullpage from "./Fullpage.jsx";
 
 function App(){

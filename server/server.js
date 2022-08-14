@@ -1,17 +1,14 @@
-// react
-import React from "react"; 
-import App from "./components/App.jsx";
-import { createRoot } from 'react-dom/client';
 //mongoose
-// const mongoose=require ("mongoose");
-// const express=require("express");
+const mongoose=require ("mongoose");
+const express=require("express");
 
-// const app = express();
+const app = express();
 
-// react ui
-const container = document.getElementById('root');
-const root = createRoot(container); 
-root.render(<App />);
+app.get("/api", (req,res) =>{
+    res.send("hello");
+})
+
+app.listen(5000,() => {console.log("server is up on port 5000")});
 
 //connectiong to the db
 // mongoose.connect("mongodb://localhost:27017//slDB");
