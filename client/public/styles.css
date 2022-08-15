@@ -20,10 +20,7 @@
     display: flex;
     justify-content: space-around;
     padding: 2.5rem;
-}
-
-p{
-    font-size: 0.7rem;
+    
 }
 
 body{
@@ -34,9 +31,26 @@ body{
     direction:rtl;
 }
 
+.circle {
+    margin:  0 auto 0 auto;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    width: 17rem;
+    height: 17rem;
+    position:relative;
+    bottom: 5rem;
+    z-index: -2;
+    display: flow-root;
+    
+}
+
+.container{
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
 .darkHeading{
     color: #3B5B66;
-    display: inline-block;
     margin: auto 0.5rem;
     /* text-shadow: 1px 1px 2px #3B5B66; */
 }
@@ -82,10 +96,33 @@ body{
     top:0px;
 }
 
+
+h1{
+    color: white;
+ font-size: 55px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+
+
+
 #logo{
     font-style: bold;
     margin: 0;
 
+}
+
+.lightHeading{
+    color: white;
+    margin: auto 0.5rem;
+}
+
+.mainHeading{
+    display: inline-block;
+    padding-top: 2rem;
 }
 
 .navbar{
@@ -112,6 +149,40 @@ body{
     font-size: 14px;
 }
 
+p{
+    font-size: 0.7rem;
+}
+
+.previewProduct{
+    text-align: end;
+    margin: 0 auto 0 auto;
+    padding: 1rem 2rem;
+    
+}
+
+.previewProduct img{
+    display: flow-root;
+    position: absolute;
+    bottom: 15rem;
+    z-index: -1;
+    max-width: 70%;
+    height: auto;
+    margin: 0 auto 0 auto;
+
+}
+
+.productDiscription{
+    text-align: center;
+    padding : 1rem;
+    /* position: relative; */
+}
+
+.productDiscription button{
+    display: block;
+    min-width: 11rem;
+    margin: 1rem auto 1rem auto;
+}
+
 .rectengle{
     text-align: center;
     margin: 2.3rem 5% 0 5%;
@@ -124,5 +195,19 @@ body{
     position: absolute;
 }
 
+.swiper-button-next,
+.swiper-button-prev{
+    color: white !important;
+}
 
+.swiper-pagintion-bullet{
+    color:red !important;
+}
+.swiper-pagintion{
+    color:red !important;
+
+}
+.swiper-pagintion-bullet-active{
+    color: red!important;
+}
 

@@ -1,29 +1,31 @@
 import React from "react";
-import FaceVideo from "../../client/node_modules/src/components/FaceVideo.jsx";
-import Navbar from "../../client/node_modules/src/components/Navbar.jsx";
-import ScreenSize from "src/components/ScreenSize.jsx";
-import About from "../../client/node_modules/src/components/About.jsx";
-// import Fullpage from "./Fullpage.jsx";
+import FaceVideo from "./FaceVideo";
+import Navbar from "./Navbar";
+// import ScreenSize from "src/components/ScreenSize.jsx";
+import About from "./About";
+import Teaser from "./Teaser";
 
 function App(){
-     
+     const previewOptions=[{
+        type:"סדנא משלבת הרצאה",
+        name: "לחם זברה סלק",
+        productName:"סדנת דגנים",
+        benefits:["מנקה כבד - נוגד חמצון","משפר תהליכי עיקול"],
+        imgName:"previewImg.png"
+     },{
+        type:"סדנא משלבת הרצאה",
+        name: "גרנולה מכוסמת ירוקה",
+        productName:"סדנת קטניות",
+        benefits:["מנקה את הכבד - נוגד חמצון","משפר תהליכי עיכול"],
+        imgName:"previewImg.png"
+     }
+    ]
     return (<div>
         <Navbar />
         <FaceVideo />
         <About />
-        {/* <Fullpage />   */}
-        {/* <div id="fullpage">
-                <div class="section">Section 1</div>
-                <div class="section">
-                    <div class="slide" data-anchor="slide1">Slide 2.1</div>
-                    <div class="slide" data-anchor="slide2">Slide 2.2</div>
-                </div>
-                <div class="section">Section 3</div>
-                <div class="section">Section 4</div>
-            </div> */}
-        {/* <Fullpage /> */}
-        {/* <Fullpage section1={FaceVideo} section2={About} /> */}
-    </div>)
+        <Teaser preview={previewOptions}/>
+        </div>)
 }
 
 export default App;

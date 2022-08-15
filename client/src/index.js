@@ -1,7 +1,8 @@
 // react
 import React from "react"; 
-import App from "src/components/App.jsx";
+import App from "./components/App.jsx";
 import { createRoot } from 'react-dom/client';
+import { render } from 'react-dom';
 
 // react ui
 const container = document.getElementById('root');
