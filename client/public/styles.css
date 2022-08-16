@@ -195,19 +195,17 @@ p{
     position: absolute;
 }
 
+.review{
+    background-color: white;
+    padding: 1rem;
+}
+
 .swiper-button-next,
 .swiper-button-prev{
     color: white !important;
 }
 
-.swiper-pagintion-bullet{
-    color:red !important;
-}
-.swiper-pagintion{
-    color:red !important;
-
-}
-.swiper-pagintion-bullet-active{
-    color: red!important;
+.testimonials{
+    background-color: #D4E1D8;
 }
 
