@@ -30,24 +30,24 @@ function Testimonials(props){
 
     effect={"coverflow"}
     modules={[EffectCoverflow, Pagination]}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        pagination={true}
-        className="mySwiper"
-        
-      loop
+    grabCursor={true}
+    centeredSlides={true}
+    slidesPerView={1}
+    coverflowEffect={{
+      rotate: 50,
+      stretch: 0,
+      depth: 100,
+      modifier: 1,
+      slideShadows: true,
+   }}
+    pagination={true}
+    className="mySwiper"
+    loop
     >
-        {props.reviews.map((review, index) => <SwiperSlide>
-                <ReviewCard key={index} review={review} />
-            </SwiperSlide>)}
+        {props.reviews.map((review, index) => {
+       return <SwiperSlide key={index}>
+                <ReviewCard key={review._id} review={review} />
+            </SwiperSlide>})}
     </Swiper>
  </div>
 }

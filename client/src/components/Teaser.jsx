@@ -31,8 +31,8 @@ function Teaser(props){
     //     else {return "#F29E9B"}})}
     loop
     >
-        {props.preview.map((previewItem, index) => <SwiperSlide>
-            <PreviewProduct key={index} previewItem={previewItem} />
+        {props.preview.map((previewItem,index) => <SwiperSlide key={index}>
+            <PreviewProduct key={previewItem._id} previewItem={previewItem} />
             </SwiperSlide>)}
     </Swiper>
     </div>
