@@ -5,27 +5,18 @@ import About from "./About";
 import Teaser from "./Teaser";
 import Testimonials from "./Testimonial";
 import { useState,useEffect } from "react";
+import useFetch from "../useFetch";
 
 function HomePage(){
-
-    const [previewOptions,setOptions]=useState([]);
-    const [reviews,setReviews]=useState([]);
-    function getData(){
-        fetch("http://localhost:5000/")
-        .then((response) => response.json())
-        .then((data) => {
-            setOptions(data.previewOptions)
-            setReviews(data.reviews);
-            console.log(data);
-        });
-    }
-    useEffect(() => {getData()},[]);
-    return (<div>
+    const {data, isPending, error}=useFetch("http://localhost:5000/");
+   return (<div>
         <Navbar />
         <FaceVideo />
         <About />
-        <Teaser preview={previewOptions}/>
-        <Testimonials reviews={reviews} />
+        {isPending && <h1>loading...</h1>} 
+        {data && <Teaser preview={data.previewOptions}/>}
+        {data && <Testimonials reviews={data.reviews} />}
+        
         </div>)
 }
 
