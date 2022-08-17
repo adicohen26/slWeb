@@ -1,10 +1,9 @@
 import React from "react";
-import FaceVideo from "./FaceVideo";
+import FaceVideo from "./homepage/FaceVideo";
 import Navbar from "./Navbar";
-import About from "./About";
-import Teaser from "./Teaser";
-import Testimonials from "./Testimonial";
-import { useState,useEffect } from "react";
+import About from "./homepage/About";
+import Teaser from "./homepage/Teaser";
+import Testimonials from "./homepage/Testimonial";
 import useFetch from "../useFetch";
 
 function HomePage(){
@@ -16,7 +15,6 @@ function HomePage(){
         {isPending && <h1>loading...</h1>} 
         {data && <Teaser preview={data.previewOptions}/>}
         {data && <Testimonials reviews={data.reviews} />}
-        
         </div>)
 }
 

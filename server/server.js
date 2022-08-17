@@ -7,58 +7,20 @@ const app = express();
 //connectiong to the db
 mongoose.connect("mongodb://localhost:27017/slDB");
 
-app.get("/services/workshops", (req,res) =>{
-    Service.find({type : "workshop"},function(err,result) {
+app.get("/services/:service", (req,res) =>{
+    const service=req.params.service;
+    Service.find({type : service},function(err,result) {
         if(err){
             console.log(err);
         }else if(result){
             res.json(result);
         }else{
-            res.send("there are no workshops");
+            res.send("there are no services");
         }
     });
-});
-
-app.get("/services/courses", (req,res) =>{
-    Service.find({type : "course"},function(err,result) {
-        if(err){
-            console.log(err);
-        }else if(result){
-            res.json(result);
-        }else{
-            res.send("there are no courses");
-        }
-    });
-});
-
-app.get("/services/boutiqueBooths", (req,res) =>{
-    Service.find({type : "boutiqueBooth"},function(err,result) {
-        if(err){
-            console.log(err);
-        }else if(result){
-            res.json(result);
-        }else{
-            res.send("there are no boutique booths");
-        }
-    });
-});
+}); 
 
 app.get("/", (req,res) =>{
-    // const previewOptions=[{
-    //     type:"סדנא משלבת הרצאה",
-    //     name: "לחם זברה סלק",
-    //     productName:"סדנת דגנים",
-    //     benefits:["מנקה כבד - נוגד חמצון","משפר תהליכי עיקול"],
-    //     imgName:"previewImg.png"
-    //  },{
-    //     type:"סדנא משלבת הרצאה",
-    //     name: "גרנולה מכוסמת ירוקה",
-    //     productName:"סדנת קטניות",
-    //     benefits:["מנקה את הכבד - נוגד חמצון","משפר תהליכי עיכול"],
-    //     imgName:"previewImg.png"
-    //  }
-    // ];
-
     Review.find(function(err,resultReviews) {
         if(err){
             console.log(err);
@@ -77,16 +39,6 @@ app.get("/", (req,res) =>{
             res.send("there are no reviews");
         }
     });
-
-    // PreviewOption.find(function(err,result) {
-    //     if(err){
-    //         console.log(err);
-    //     }else if(result){
-    //         previewOptions=result;
-    //     }else{
-    //         // res.send("there are no reviews");
-    //     }
-    // });
 });
 
 const serviceSchema=new mongoose.Schema({

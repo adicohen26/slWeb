@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import HomePage from "./HomePage";
 import {BrowserRouter as Router, Route, Routes,} from "react-router-dom";
 import AllServices from "./AllServices";
+import Service from "./Service";
 
 function App(){
     return (
@@ -10,7 +11,9 @@ function App(){
             {/* <Navbar /> */}
             <Routes>
                 <Route exact path="/" element={<HomePage />} />
-                <Route path="/services" element={<AllServices />} />
+                <Route exact path="/services" element={<AllServices />} />
+                <Route path="/services/:service" element={<Service />} />
+                
             </Routes>
         </Router>)
         
