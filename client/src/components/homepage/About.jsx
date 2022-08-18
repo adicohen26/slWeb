@@ -1,7 +1,7 @@
 import React from "react";
 
 function About(){
-    return <div className="about">
+    return <div name="about" className="about" id={"about"}>
         <h2 className="darkHeading mainHeading"> מנה ראשונה</h2>
         <h3 className="darkHeading mainHeading"> נעים להכיר ,</h3>
         <div className="rectengle"> </div>

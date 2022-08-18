@@ -1,7 +1,7 @@
 import React from "react";
 import ReviewCard from "./ReviewCard";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation, Pagination, Scrollbar, A11y, EffectFade } from 'swiper';
+import { Navigation, Pagination, Scrollbar, A11y, EffectFade,Autoplay } from 'swiper';
 // import { EffectCreative } from "swiper";
 import { EffectCoverflow } from "swiper";
 
@@ -29,10 +29,14 @@ function Testimonials(props){
 
 
     effect={"coverflow"}
-    modules={[EffectCoverflow, Pagination]}
+    modules={[EffectCoverflow, Pagination,Autoplay]}
     grabCursor={true}
     centeredSlides={true}
     slidesPerView={1}
+    autoplay={{
+      delay: 70000,
+      disableOnInteraction: false,
+    }}
     coverflowEffect={{
       rotate: 50,
       stretch: 0,

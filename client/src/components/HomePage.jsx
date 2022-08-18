@@ -1,21 +1,28 @@
 import React from "react";
 import FaceVideo from "./homepage/FaceVideo";
-import Navbar from "./Navbar";
 import About from "./homepage/About";
 import Teaser from "./homepage/Teaser";
 import Testimonials from "./homepage/Testimonial";
 import useFetch from "../useFetch";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import { Pagination ,Mousewheel} from "swiper";
 
 function HomePage(){
     const {data, isPending, error}=useFetch("http://localhost:5000/");
    return (<div>
-        <Navbar />
+        {isPending && <h1>loading...</h1>}
         <FaceVideo />
         <About />
-        {isPending && <h1>loading...</h1>} 
-        {data && <Teaser preview={data.previewOptions}/>}
+        {data && <Teaser id={"services"} preview={data.previewOptions}/>}
         {data && <Testimonials reviews={data.reviews} />}
-        </div>)
+        
+    </div>)
 }
 
 export default HomePage;
