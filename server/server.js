@@ -43,10 +43,12 @@ app.get("/", (req,res) =>{
 
 const serviceSchema=new mongoose.Schema({
     type:String,
+    typeName:String,
+    previewDuration:String,
     name:String,
     discription:String,
-    particimants:Array,
-    duration:String,
+    participants:String,
+    duration:Array,
     imgName:String,
     specificData:JSON
 });

@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import MenuIcon from '@mui/icons-material/Menu';
-import { NavLink } from "react-router-dom";
+import { NavLink , HashRouter} from "react-router-dom";
 import "./Navbar.css";
 import SideBar from "./SideBar";
 import {Link} from 'react-scroll';
+// {{hash: "/about"}}
+import { HashLink } from 'react-router-hash-link';
 
 function Navbar(){
     const [isOpen,setIsOpen]=useState(false);
@@ -14,21 +16,21 @@ function Navbar(){
 
     return <div className="navbar">
         <nav className="navbar">
-            <NavLink className="nav-link logo" to="/">
+            <HashLink className="nav-link logo" smooth to="/#top">
                 שרון ולירון
-            </NavLink>
+            </HashLink>
             <MenuIcon className="bar" onClick={toggle} />
             {isOpen && <SideBar isOpen={isOpen} toggle={toggle} />}
             <div className="nav-menu">
-                <NavLink className="nav-link"  to="/#about" >
+                <HashLink className="nav-link" smooth to="/#about">
                     אודות
-                </NavLink>
+                </HashLink>
                 <NavLink className="nav-link"  to="/services">
                      החוויות שלנו
                 </NavLink>
-                <Link className="nav-link" to="/">
+                <NavLink className="nav-link" to="/">
                     צור קשר
-                </Link>
+                </NavLink>
             </div>
         </nav>
          
