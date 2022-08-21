@@ -36,4 +36,4 @@ jobs:
         # Set if your app is located in a subdirectory.
         appdir: client
         # Buildpacks to install on Heroku
-        buildpacks: heroku/nodejs
+        buildpack: heroku/nodejs
