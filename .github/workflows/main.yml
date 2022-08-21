@@ -22,21 +22,20 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-       - name: Heroku Action
-         run: | 
-           echo Start heroku
-
-        - uses: CDNievas/heroku-action@v1.0
-            with:
-            # Used for authentication. You can find it in your heroku homepage account settings
-            heroku_api_key: ${{secrets.HEROKU_CLIENT_KEY}}
-            # Email from Heroku Account
-            heroku_email: guyrabina@gmail.com
-            # The appname to use for deploying/updating
-            heroku_app_name: lit-cliffs-87640
-            # The branch that you would like to deploy to Heroku
-            branch: heroku
-            # Set if your app is located in a subdirectory.
-            appdir: client
-            # Buildpacks to install on Heroku
-            buildpacks: heroku/nodejs
+    - name: Heroku Action
+      run: | 
+        echo Start heroku
+    - uses: CDNievas/heroku-action@v1.0
+      with:
+        # Used for authentication. You can find it in your heroku homepage account settings
+        heroku_api_key: ${{secrets.HEROKU_CLIENT_KEY}}
+        # Email from Heroku Account
+        heroku_email: guyrabina@gmail.com
+        # The appname to use for deploying/updating
+        heroku_app_name: lit-cliffs-87640
+        # The branch that you would like to deploy to Heroku
+        branch: heroku
+        # Set if your app is located in a subdirectory.
+        appdir: client
+        # Buildpacks to install on Heroku
+        buildpacks: heroku/nodejs
