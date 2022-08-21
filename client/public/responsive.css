@@ -84,12 +84,23 @@
         height: 100%;
         margin: 0 auto 0 auto;
     }
-    .productDiscription{
-
-    }
     .swiper-content{
         display:flex;
         justify-content:space-between;
+    }
+    .all-cards-container{
+        width:100%;
+        
+    }
+    .small-card{
+        width:50%
+    }
+    .small-cards-container{
+        display: inline-flex;
+        width:100%;
+    }
+    .cardsParent{
+        width: 45%;
     }
     
 }
@@ -137,6 +148,9 @@
         display: inline-flex;
         justify-content: space-around;
     }
+    .cardsParent{
+        width: 80%;
+    }
 }
 
 /* phone */
@@ -151,6 +165,17 @@
     }
     .about{
     padding: 0 2rem ;
+    }
+}
+
+/* computer and tablet */
+@media (min-width:732px){
+    .popup{
+        width:50%;
+        height:40%;
+        position: relative;
+        margin: 0 auto 0 auto;
+        border-radius: 20px;
     }
 }
 

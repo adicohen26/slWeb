@@ -3,12 +3,16 @@ import SubjectCard from "./allServices/SubjectCard";
 
 
 function AllServices(){
-    return<div className="container" >
-        <SubjectCard name="קורסים" img="desertWithBackground.jpg" link="/services/course"/>
-        <SubjectCard name="סדנא משלבת הרצאה" img="desertWithBackground.jpg" link="/services/workshop"/>
-        <SubjectCard name="דוכני בוטיק" img="desertWithBackground.jpg" link="/services/boutiqueBooth"/>
-        <SubjectCard name="סדנאות" img="desertWithBackground.jpg" link="/"/>
-        <SubjectCard name="הרצאות" img="desertWithBackground.jpg" link="/"/>
+    return<div className="section-container" >
+        <SubjectCard name="קורסים" img="desertNoBackgrong.png" link="/services/course"/>
+        <div className="small-cards-container">
+           <SubjectCard name="סדנא משלבת הרצאה" img="desertNoBackgrong.png" link="/services/workshop" />
+            <SubjectCard name="דוכני בוטיק" img="desertNoBackgrong.png" link="/services/boutiqueBooth" />
+        </div>
+            <div className="small-cards-container">
+            <SubjectCard name="סדנאות" img="desertNoBackgrong.png" link="/"/>
+            <SubjectCard name="הרצאות" img="desertNoBackgrong.png" link="/" />
+        </div>
 </div>
 }
 

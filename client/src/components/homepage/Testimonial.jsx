@@ -14,7 +14,7 @@ import 'swiper/css/scrollbar';
 
 
 function Testimonials(props){
- return <div className="testimonials container">
+ return <div className="testimonials section-container">
     <h2 className="darkHeading mainHeading">ולקינוח</h2>
     <h3 className="darkHeading mainHeading"> לקוחות מספרים על החוויה שלנו יחד </h3>
     <Swiper
@@ -25,9 +25,6 @@ function Testimonials(props){
     //   speed={800}
     //   pagination={{ clickable: true }}
     //   effect
-
-
-
     effect={"coverflow"}
     modules={[EffectCoverflow, Pagination,Autoplay]}
     grabCursor={true}

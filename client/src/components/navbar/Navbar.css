@@ -92,11 +92,15 @@
     width: 66%;
     height: 100%;
     background-color:#3B5B66;
-    /* display: grid; */
-    /* align-items: flex-start; */
     top: 0;
     right: 0;
     transform: 0.3s ease-in-out;
+}
+
+@media  (min-width:580px) and (max-width:768px){
+    .side-bar-container{
+        width: 50%;
+    }
 }
 
 .side-bar-container .logo{

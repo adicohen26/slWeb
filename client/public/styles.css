@@ -47,8 +47,7 @@ body{
 }
 
 .cardsParent{
-     /* display:inline-block; */
-      margin:20px;
+    margin:20px;
 }
 
 .card-discription-flex-box{
@@ -284,6 +283,13 @@ p{
 .section-container{
     padding: 0 1rem ;
 
+}
+
+.service-card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .swiper-button-next,

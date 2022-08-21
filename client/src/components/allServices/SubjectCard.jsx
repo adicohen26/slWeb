@@ -9,13 +9,16 @@ import { margin } from "@mui/system";
 
 function SubjectCard(props){
   const imgUrl="../../images/"+props.img;
-    return (<Card className="cardsParent">
+  let cssClasses="";
+
+    return (<Card className="all-cards-container">
     <CardActionArea component={Link} to={props.link} >
       <CardMedia
         component="img"
         height="250rem"
         image={imgUrl}
-        alt="courses"
+        background-color="blue"
+        alt="img"
       />
       <div className="overlay">
       <h1>{props.name}</h1>

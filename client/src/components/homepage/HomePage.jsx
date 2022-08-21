@@ -20,7 +20,7 @@ function HomePage(){
         <FaceVideo />
         <About />
         {data && <Teaser id={"services"} preview={data.previewOptions}/>}
-        {data && <Testimonials reviews={data.reviews} />}
+        {/* {data && <Testimonials reviews={data.reviews} />} */}
         
     </div>)
 }
