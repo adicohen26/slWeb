@@ -25,7 +25,7 @@ jobs:
     - name: Heroku Action
       run: | 
         echo Start heroku
-    - uses: CDNievas/heroku-action@v1.0
+    - uses: AkhileshNS/heroku-deploy@v3.12.12
       with:
         # Used for authentication. You can find it in your heroku homepage account settings
         heroku_api_key: ${{secrets.HEROKU_CLIENT_KEY}}
@@ -33,10 +33,6 @@ jobs:
         heroku_email: guyrabina@gmail.com
         # The appname to use for deploying/updating
         heroku_app_name: lit-cliffs-87640
-        # The branch that you would like to deploy to Heroku
-        branch: heroku
-        # Set this to true if want to use --force
-        useforce: true
         # Set if your app is located in a subdirectory.
         appdir: client
         # Buildpacks to install on Heroku
