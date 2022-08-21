@@ -1,6 +1,8 @@
 .about{
     background-color: #D4E1D8;
     display: block;
+    padding: 0 2rem ;
+
 }
 
 .about-discription{
@@ -82,11 +84,6 @@ body{
     z-index: -2;
     display: flow-root;
     
-}
-
-.container{
-    padding: 1rem;
-    padding-top: 4rem;
 }
 
 .darkHeading{
@@ -243,9 +240,9 @@ p{
 .previewProduct img{
     display: flow-root;
     position: absolute;
-    bottom: 15rem;
+    bottom: -4rem;
     z-index: -1;
-    max-width: 70%;
+    max-width: 90%;
     height: auto;
     margin: 0 auto 0 auto;
 
@@ -285,7 +282,7 @@ p{
 }
 
 .section-container{
-    padding: 0 2rem ;
+    padding: 0 1rem ;
 
 }
 

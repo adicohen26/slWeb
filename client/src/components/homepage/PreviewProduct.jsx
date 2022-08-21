@@ -19,9 +19,17 @@ function PreviewProduct(props){
     const item=props.previewItem;
     const imgSrc="../../images/"+item.imgName;
     return <div className="previewProduct">
-        <h1>{item.typeName}</h1>
-        <div className="circle"></div>
-        <img src={imgSrc} alt="תמונת מוצר" />
+        <div className="stack-elements-container">
+          <div className="preview-heading-container">
+            <h1>{item.typeName}</h1>
+          </div>
+          <div className="circle">
+          <img src={imgSrc} alt="תמונת מוצר" />
+
+          </div>
+          {/* <div className="img-container"> */}
+          {/* </div> */}
+        </div>
         <div className="productDiscription">
             <h4 className="darkHeading">{item.name}</h4>
             {item.benefits.map((benefit,index) => <p className="darkHeading" key={index}>{benefit}</p>)}

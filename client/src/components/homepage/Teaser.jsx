@@ -11,7 +11,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
 function Teaser(props){
-    return <div className="container" style={{backgroundColor: "#F29E9B"}}>
+    return <div className="section-container" style={{backgroundColor: "#F29E9B"}}>
        <h2 className="lightHeading mainHeading"> מנה עיקרית</h2>
        <h3 className="lightHeading mainHeading"> מגוון החוויות שלנו </h3>
         <Swiper
@@ -31,7 +31,7 @@ function Teaser(props){
     //     else {return "#F29E9B"}})}
     loop
     >
-        {props.preview.map((previewItem,index) => <SwiperSlide key={index}>
+        {props.preview.map((previewItem,index) => <SwiperSlide className="swiper-content" key={index}>
             <PreviewProduct key={previewItem._id} previewItem={previewItem} />
             </SwiperSlide>)}
     </Swiper>
