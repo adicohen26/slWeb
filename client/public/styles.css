@@ -175,6 +175,8 @@ p{
     font-size: 0.7rem;
 }
 
+
+
 .popup{
     position:absolute;
     top: 10%;
@@ -269,6 +271,17 @@ p{
 .swiper-button-next,
 .swiper-button-prev{
     color: white !important;
+}
+
+.swiper-photo-container{
+    width: 80%;
+    height: 30%;
+}
+
+.swiper-photo{
+    max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .testimonials{

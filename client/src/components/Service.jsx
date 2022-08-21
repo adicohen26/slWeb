@@ -14,11 +14,13 @@ function Service(props){
         setSelectedCard(cardInfo);
         setIsOpen(true);
     }
+    
+    (data && console.log(data));
 
     return <div className="container">
         {isPending && <h1>loading ..</h1>}
         {data && <h2 className="darkHeading">{data[0].typeName}</h2>}
-        {data && data.map((data,index) => <ServiceCard key={index} data={data} openPopup={openPopup}/>)}
+        {data && data.map((data,index) => <ServiceCard key={index} data={data} id={data.name} openPopup={openPopup}/>)}
         {isOpen && <Popup isOpen={isOpen} setIsOpen={setIsOpen} selectedCard={selectedCard}/>}
     </div>
 }

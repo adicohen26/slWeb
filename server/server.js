@@ -3,7 +3,6 @@ const mongoose=require ("mongoose");
 const express=require("express");
 
 const app = express();
-
 //connectiong to the db
 mongoose.connect("mongodb://localhost:27017/slDB");
 
