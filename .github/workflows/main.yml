@@ -34,13 +34,13 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-			
-	- name: Heroku Action
-				run: | 
-					echo Start heroku
+
+       - name: Heroku Action
+         run: | 
+           echo Start heroku
 					
-			- uses: CDNievas/heroku-action@v1.0
-					with:
+        - uses: CDNievas/heroku-action@v1.0
+            with:
             # Used for authentication. You can find it in your heroku homepage account settings
             heroku_api_key: ${{secrets.HEROKU_CLIENT_KEY}}
             # Email from Heroku Account
