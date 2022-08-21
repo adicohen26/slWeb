@@ -1,9 +1,9 @@
 import React from "react";
-import FaceVideo from "./homepage/FaceVideo";
-import About from "./homepage/About";
-import Teaser from "./homepage/Teaser";
-import Testimonials from "./homepage/Testimonial";
-import useFetch from "../useFetch";
+import FaceVideo from "./FaceVideo";
+import About from "./About";
+import Teaser from "./Teaser";
+import Testimonials from "./Testimonial";
+import useFetch from "../../useFetch";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles

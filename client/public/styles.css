@@ -1,8 +1,19 @@
 .about{
     background-color: #D4E1D8;
-    padding: 4rem 2rem 1rem;
     display: block;
 }
+
+.about-discription{
+    background-color: white;
+    padding: 6rem 2rem 2rem 2rem;
+    width: 70%;
+    border-radius: 0.5rem;
+    position: relative;
+    right: 2.4rem;
+    bottom: 4rem;
+    
+}
+
 .aboutImg{
     background-image: url(./images/about-img.jpg);
     width: 75%;
@@ -11,6 +22,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-size: fill;
     position: relative;
     z-index: 1 ;
     left: 1rem;
@@ -83,17 +95,6 @@ body{
     /* text-shadow: 1px 1px 2px #3B5B66; */
 }
 
-.discription{
-    background-color: white;
-    padding: 6rem 2rem 2rem 2rem;
-    width: 70%;
-    border-radius: 0.5rem;
-    position: relative;
-    right: 2.4rem;
-    bottom: 4rem;
-    
-}
-
 .faceVid{
     background-image: url("./images/desertWithBackground.jpg") ;
     /* Full height */
@@ -111,15 +112,30 @@ body{
     margin: 0;
     /* font-size: 400%; */
     padding-top:  3rem;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    animation: 
+    typing 3.5s steps(30, end),
+    /* typing 3.5s infinite, */
+    blink-caret .5s step-end infinite;
+    animation-iteration-count: 10;
 }
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
 .frontImg{
     background-image: url("./images/deserNoBackground1.png");
-    height:  100%;
+    height:  55rem;
     width: 100%; 
+
     /* Center and scale the image nicely */
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
+
     position: absolute;
     top:0px;
 }
@@ -251,7 +267,7 @@ p{
     text-align: center;
     margin: 2.3rem 5% 0 5%;
     width: 70%;
-    height: 40rem;
+    height: 35rem;
     border: 0.8rem;
     border-style: solid;
     border-color: #F29E9B;
@@ -268,14 +284,19 @@ p{
     color: #F29E9B;
 }
 
+.section-container{
+    padding: 0 2rem ;
+
+}
+
 .swiper-button-next,
 .swiper-button-prev{
     color: white !important;
 }
 
-.swiper-photo-container{
-    width: 80%;
-    height: 30%;
+.swiper-photo-container{    
+    padding: 4rem 2rem 1rem;
+
 }
 
 .swiper-photo{

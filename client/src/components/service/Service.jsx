@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import useFetch from "../useFetch";
+import useFetch from "../../useFetch";
 import { useParams } from "react-router-dom";
 import ServiceCard from "./ServiceCard";
 import Popup from "./Popup";

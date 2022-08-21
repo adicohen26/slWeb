@@ -21,17 +21,20 @@ function SideBar(props) {
                 <a className='side-bar-link' href="/services" onClick={toggle}>
                     כל החוויות שלנו
                 </a>
-                <a className='side-bar-link-sub' href="/" onClick={toggle}>
+                <a className='side-bar-link-sub' href="/services/course" onClick={toggle}>
                     קורסים
                 </a>
-                <a className='side-bar-link-sub' href="/" onClick={toggle}>
+                <a className='side-bar-link-sub' href="/services/workshop" onClick={toggle}>
                  סדנא משלבת הרצאה
                 </a>
-                <a className='side-bar-link-sub' href="/" onClick={toggle}>
+                <a className='side-bar-link-sub' href="/services/boutiqueBooth" onClick={toggle}>
                     דוכני בוטיק
                 </a>
                 <a className='side-bar-link-sub' href="/" onClick={toggle}>
                     סדנאות
+                </a>
+                <a className='side-bar-link-sub' href="/" onClick={toggle}>
+                    הרצאות
                 </a>
                 <a className='side-bar-link' href="/" onClick={toggle}>
                     צור קשר

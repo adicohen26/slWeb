@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./navbar/Navbar";
-import HomePage from "./HomePage";
+import HomePage from "./homepage/HomePage";
 import {BrowserRouter as Router, Route, Routes,} from "react-router-dom";
 import AllServices from "./AllServices";
-import Service from "./Service";
+import Service from "./service/Service";
 
 function App(){
     return (
