@@ -63,6 +63,9 @@ body{
 
 .card-icon{
     margin: 0.5rem;
+    cursor: pointer;
+
+  transition: all 0.3s ease-out;
 }
 
 .card-header{
@@ -84,7 +87,48 @@ body{
     display: flow-root;
     
 }
+.contact-link{
+    color: #3B5B66;
+    text-decoration: none;
+    padding: 1% 4%;
+    border-radius: 45px;
+    background-color: rgba(255, 255, 255, 0.392);
+    font-size: 27px;
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 
+}
+.contact-link :hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.contact-ways{
+    display: inline-flex; 
+}
+.contact-ways p{
+    color:#3B5B66;
+    font-size: 16px;
+    margin: 20px;
+}
+
+@keyframes blinker{
+    0%{opacity:1.0;}
+    50%{opacity: 0.5;}
+    100%{opacity: 1.0;}
+}
+
+.copyright{
+    color: white;
+    display: inline-flex;
+    width: 98%;
+    background-color:rgba(0, 0, 0, 0.18);
+    padding: 1%;
+    justify-content: center;
+    align-items: center
+}
 .darkHeading{
     color: #3B5B66;
     margin: auto 0.5rem;
@@ -121,6 +165,34 @@ body{
     from { width: 0 }
     to { width: 100% }
   }
+
+.footer{
+    background-color: #F29E9B;
+    text-align: center;
+}
+
+.footer img{
+    width: 20%;
+    margin :20px;
+}
+
+.footer-contact-container{
+    margin: 20px;
+
+}
+.footer-link{
+    text-decoration: none;
+    font-weight: bold;
+    color: #3B5B66;
+    margin:2%;
+}
+.footer-link :hover{
+    color: white;
+}
+
+.footer hr{
+    border-top: solid;
+}
 
 .frontImg{
     background-image: url("./images/deserNoBackground1.png");
@@ -220,6 +292,7 @@ p{
     right: 0;
     background-color: rgba(0, 0, 0, 0.637);
     z-index: 1000;
+    transition: opacity 500ms;
 }
 
 .popup-info-options{
@@ -270,12 +343,45 @@ p{
     /* display: inline-block; */
     position: absolute;
 }
+.testimonials .rectengle{
+    color: red;
+    position: absolute ;
+    margin: 0;
+    top: 6.5rem;
+    left: 2rem;
+    width: 23.5rem ;
+    height:5rem !important;
+    border-left: 0rem;
+    border-top:0rem;
+
+}
 
 .review{
     background-color: white;
     padding: 1rem;
+    margin-right: 2rem;
+    z-index: 4 !important;
 }
 
+
+.review-quote-right{
+    position: relative;
+    top:3rem;
+    right: 2rem;
+}
+.review-quote-left{
+    position: relative;
+    bottom:1.5rem;
+    right:19rem;
+}
+.review-name{
+position: relative;
+bottom: 4.5rem;
+right: 1rem;
+}
+.testimonials p{
+    font-size: 16px;
+}
 .seconderyHeading{
     color: #F29E9B;
 }
@@ -297,6 +403,17 @@ p{
     color: white !important;
 }
 
+ .mySwiper .swiper-button-next{
+/* margin-top: 300px; */
+top:250px !important;
+
+}
+.mySwiper .swiper-button-prev{
+    top:250px !important;
+    right: 500px !important;
+    /* margin-bottom: 100px; */
+    }
+
 .swiper-photo-container{    
     padding: 4rem 2rem 1rem;
 
@@ -308,7 +425,12 @@ p{
   object-fit: contain;
 }
 
-.testimonials{
+.testimonials {
     background-color: #D4E1D8;
+    margin: 0 auto 0 auto;
+
+}
+.testimonials-swiper{
+    margin: 0 auto 0 auto;
 }
 

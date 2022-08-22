@@ -102,6 +102,9 @@
     .cardsParent{
         width: 45%;
     }
+    .footer img{
+        width:10%;
+    }
     
 }
 
@@ -166,16 +169,65 @@
     .about{
     padding: 0 2rem ;
     }
+    .testimonials .rectengle{
+        top: 8rem;
+        left: 1.5rem;
+        width: 16.5rem;
+    }
+    .testimonials{
+        width:20rem;
+    }
+    .review-quote-left{
+        right:17rem;
+    }
+    .footer img{
+        width: 50%;
+        margin :20px;
+    }
+}
+
+@media(max-width:364px){
+    .testimonials .rectengle{
+        display: none;
+    }
 }
 
 /* computer and tablet */
 @media (min-width:732px){
     .popup{
         width:50%;
-        height:40%;
+        height:70%;
         position: relative;
         margin: 0 auto 0 auto;
         border-radius: 20px;
+        padding:4%;
+    transition: all 5s ease-in-out;
+    overflow:hidden;
+    }
+
+    .popup-container{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .swiper-photo-container{
+        width:35%;
+    }
+    .popup-service-description{
+        text-align: center;
+    }
+    .popup-text-area{
+        overflow:scroll;
+    }
+    .testimonials{
+        width:30rem;
+    }
+    .review-quote-left{
+        right:26rem;
+    }
+    .testimonials .rectengle{
+        top: 6.7rem;
+        left: 4.5rem;
     }
 }
 
